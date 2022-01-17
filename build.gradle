@@ -7,10 +7,15 @@ repositories {
 }
 
 dependencies {
-    testImplementation 'com.codeborne:selenide:6.1.2'
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
+    testImplementation (
+            'org.junit.jupiter:junit-jupiter:5.8.2',
+            'com.codeborne:selenide:6.2.0',
+            'org.assertj:assertj-core:3.22.0'
+    )
+
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
 }
+
 
 test {
     useJUnitPlatform()
